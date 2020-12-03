@@ -1,0 +1,368 @@
+/*цвет заголовков color: #212121;*/
+
+/*вторичный цвет текста color: #757575;*/
+
+/*акцент background: #2196F3;*/
+
+/* вторичный цвет фона  background: #F5F4FA;*/
+
+/*белый color: #FFFFFF;*/
+
+/* вторичный белый (footer) color: rgba(255, 255, 255, 0.6); */
+:root{
+    --primaty-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #ffffff;
+}
+
+/* hero */
+.hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero.jpg);
+    background-color: rgba(47, 48, 58, 0.4);
+
+    
+    width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    text-align: center;
+    min-height: 400px;
+    padding-top: 200px;
+    padding-bottom: 200px;  
+
+} 
+
+.hero-title{
+    color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* hero button */
+.hero .button{
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    outline:none;
+    padding: 10px 32px;
+    min-width: 136px;
+    text-align: center;
+
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+/* advantages */
+.section-advantages{
+    padding-bottom: 0;
+}
+
+/* features */
+.feature {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.feature > .item{
+    flex-basis: calc(100%-60px) /4);
+    margin-right: 30px;
+}
+
+.feature > .item:nth-child(4){
+    margin-right: 0;
+}
+
+.feature .item:before{
+content: "";
+margin-bottom: 30px;
+display:block;
+height: 120px;
+background-repeat: no-repeat;
+
+background-position: center;
+background-color: #F5F4FA;
+border-radius: 4px;
+
+}
+.first::before{
+    background-image: url(../images/advantages/antenna\ 1.svg);
+}
+
+.second::before{
+    background-image: url(../images/advantages/clock\ 1.svg);
+}
+
+.third::before{
+    background-image: url(../images/advantages/diagram\ 1.svg);
+}
+
+.fourth::before{
+    background-image: url(../images/advantages/astronaut\ 1.svg);
+}
+ 
+
+.feature .title{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0;
+
+}
+
+.feature .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Work */
+
+.work-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-list img{
+    display: block;
+}
+.work-photo{
+    margin-right: 30px;
+}
+
+.work-photo:nth-child(3){
+    margin-right: 0;
+}
+
+/* team */
+.team-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-list .team-photo{
+    margin-right: 30px;
+    background-color: var(--primary-white-color);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2)
+}
+
+.team-list img{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.team-list .team-photo:nth-child(4){
+    margin-right: 0;
+}
+
+.team-list .title{
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.team-list  .text{
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+/* section */
+.section-title{
+    color:var(--title-text-color) ;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.section-title .team-list{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.section-team{
+    background-color: #F5F4FA;
+}
+
+
+/* Clients */
+
+.clients-list{
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.clients-item{
+    width: 170px;
+    height: 90px;
+    margin-right: 30px;
+    border: 1px solid #AFB1B8;
+    /* box-sizing: border-box; */
+    border-radius: 4px;
+}
+
+.clients-item:last-child{
+    margin-right: 0;
+}
+
+
+.clients-item:hover,
+.clients-item:focus{
+    border:  1px solid var(--accent-color);
+}
+
+.logo{
+    /* width: 170px;
+    height: 90px; */
+    margin: 0;
+}
+
+.logo-icon{
+    /* display:flex; */
+    width: 170px;
+    height: 90px;
+    fill:#AFB1B8 ;
+}
+
+.logo-icon:hover{
+    fill: var(--accent-color);
+}
+
+
+
+
+
+
+
+/* .clients-item{
+    display: flex;
+    flex-wrap: wrap; */
+    /* text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0; */
+    /* justify-content: center;
+    width: 170px;
+    height: 90px;
+    margin-right: 30px; */
+
+    /* border: 1px solid #AFB1B8;
+    border-radius: 4px; */
+
+}
+
+/* .clients-item:hover{
+    color:  var(--accent-color);
+} */
+
+/* .clients-item:last-child{
+    margin-right: 0;
+}
+
+
+.logo-icon{
+    width: 170px; 
+    height: 90px;
+    fill:#AFB1B8;
+}
+
+.logo:hover{
+    fill:  var(--accent-color);
+}
+.logo{
+    width: 170px; 
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.logo-icon:hover{
+    border: 3px solid var(--accent-color);
+} */
+
+
+
+/* 
+.logo-icon .logo{
+  
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0;
+    margin-right: 30px;
+
+    display: inline-flex;
+    margin: 0;
+    fill:#AFB1B8;
+}
+
+.logo-icon:last-child{
+    margin-right: 0;
+
+}
+
+
+/* .logo-icon .logo{
+    width: 170px;
+    height: 90px;
+
+   
+} */
+
+/* .icon-logo .logo:focus,
+.icon-logo .logo:hover{
+    fill: var(--accent-color);
+
+}  */
