@@ -250,22 +250,40 @@ align-items: center;
     border-radius: 50%;
 }
 
-.team-join .join-item:hover,
+/* .team-join .join-item:hover,
 .team-join .join-item:focus{
     background-color: var(--accent-color);
 }
 
+.team-join .link-social:hover,
+.team-join .link-social:focus{
+    background-color:var(--accent-color);
+} */
 
+.team-join .link-social:hover,
+.team-join .link-social:focus{
+    background-color: #2196F3;
+    color: white;
+}
 .team-join .icon{
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
+    fill: currentColor;
+    color: #AFB1B8
 }
 
 .team-join .icon:hover,
 .team-join .icon:focus{
-    fill: var(--primary-white-color);
-}
+    color: var(--primary-white-color);
+} 
+
+/* .team-join .icon{
+    width: 20px;
+    height: 20px;
+    fill:currentColor;
+    color: #AFB1B8;
+} */
+
 
 
 /* Clients */
