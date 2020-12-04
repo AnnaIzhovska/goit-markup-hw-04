@@ -244,8 +244,17 @@ display: flex;
 margin-bottom: 30px;
 justify-content: center;
 align-items: center;
-border-radius: 50%;
 }
+
+.team-join .join-item{
+    border-radius: 50%;
+}
+
+.team-join .join-item:hover,
+.team-join .join-item:focus{
+    background-color: var(--accent-color);
+}
+
 
 .team-join .icon{
     width: 20px;
@@ -256,11 +265,6 @@ border-radius: 50%;
 .team-join .icon:hover,
 .team-join .icon:focus{
     fill: var(--primary-white-color);
-}
-
-.team-join .link-social:hover,
-.team-join .link-social:focus{
-    background-color: var(--accent-color);
 }
 
 
@@ -286,7 +290,6 @@ border-radius: 50%;
 .clients-item:last-child{
     margin-right: 0;
 }
-
 
 .clients-item:hover,
 .clients-item:focus{
