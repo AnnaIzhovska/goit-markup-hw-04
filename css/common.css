@@ -95,8 +95,14 @@ img{
 
 }
 
-.contacts .link:hover,
-.contacts .link:focus{
+.container > .contacts .link {
+    fill: currentColor;
+    color: #757575;
+}
+
+.container > .contacts .link:hover,
+.container > .contacts .link:focus{
+    fill: var(--accent-color);
     color: var(--accent-color);
 }
 
@@ -104,22 +110,10 @@ img{
     margin-right:0;
 }
 
-
 .link .logo{
     margin-right: 10px;
-    fill: #757575;
 }
 
-.link .logo:hover,
-.link .logo:focus{
-    fill: var(--accent-color)
-}
-
-
-.contacts .number::before:hover,
-.contacts .number::before:focus{
-    fill: var(--accent-color);
-}
 
 /* Logo */
 .logo-studio{
